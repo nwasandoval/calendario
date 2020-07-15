@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calendario</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .calendario-body {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 100%;
+        height: 360px;
+      }
+
+      .calendario-header {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 60px;
+        width: 100%;
+        background: linear-gradient(
+          0deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(0, 0, 0, 0.5) 35%,
+          rgba(0, 0, 0, 0) 100%
+        );
+      }
+    </style>
+  </head>
+  <body
+    class="flex justify-center"
+    style="background-color: rgb(250, 250, 250)"
+  >
+    <div class="w-full h-full sm:w-2/5 border">
+      <div
+        class="w-full h-auto"
+        style="background: url('./noche.jpg'); background-size: cover; "
+      >
+        <div class="w-full px-8 py-6">
+          <div class="text-xl font-medium text-white flex items-center">
+            <div class="mr-2">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-caret-left-fill"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+                />
+              </svg>
+            </div>
+            <span>2020 Julio</span>
+
+            <div class="ml-2">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-caret-right-fill"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="calendario-header font-bold">
+          <div class="flex justify-center items-center text-white">
+            D
+          </div>
+          <div class="flex justify-center items-center text-white">
+            L
+          </div>
+          <div class="flex justify-center items-center text-white">
+            M
+          </div>
+          <div class="flex justify-center items-center text-white">
+            X
+          </div>
+          <div class="flex justify-center items-center text-white">
+            J
+          </div>
+          <div class="flex justify-center items-center text-white">
+            V
+          </div>
+          <div class="flex justify-center items-center text-white">
+            S
+          </div>
+        </div>
+      </div>
+
+      <div class="calendario-body">
+        <div class="border-r border-b text-gray-500 px-2 py-2">28</div>
+        <div class="border-r border-b text-gray-500 px-2 py-2">29</div>
+        <div class="border-r border-b text-gray-500 px-2 py-2">30</div>
+        <div class="border-r border-b px-2 py-2">1</div>
+        <div class="border-r border-b px-2 py-2">2</div>
+        <div class="border-r border-b px-2 py-2">3</div>
+        <div class="border-r border-b px-2 py-2">4</div>
+        <div class="border-r border-b px-2 py-2">5</div>
+        <div class="border-r border-b px-2 py-2">6</div>
+        <div class="border-r border-b px-2 py-2">7</div>
+        <div class="border-r border-b px-2 py-2">8</div>
+        <div class="border-r border-b px-2 py-2">9</div>
+        <div class="border-r border-b px-2 py-2">10</div>
+        <div class="border-r border-b px-2 py-2">11</div>
+        <div class="border-r border-b px-2 py-2">12</div>
+        <div class="border-2 border-blue-900 shadow bg-orange-100 px-2 py-2">
+          13
+        </div>
+        <div class="border-r border-b px-2 py-2">14</div>
+        <div class="border-r border-b px-2 py-2">15</div>
+        <div class="border-r border-b px-2 py-2">16</div>
+        <div class="border-r border-b px-2 py-2">17</div>
+        <div class="border-r border-b px-2 py-2">18</div>
+        <div class="border-r border-b px-2 py-2">19</div>
+        <div class="border-r border-b px-2 py-2">20</div>
+        <div class="border-r border-b px-2 py-2">21</div>
+        <div class="border-r border-b px-2 py-2">22</div>
+        <div class="border-r border-b px-2 py-2">23</div>
+        <div class="border-r border-b px-2 py-2">24</div>
+        <div class="border-r border-b px-2 py-2">25</div>
+        <div class="border-r border-b px-2 py-2">26</div>
+        <div class="border-r border-b px-2 py-2">27</div>
+        <div class="border-r border-b px-2 py-2">28</div>
+        <div class="border-r border-b px-2 py-2">29</div>
+        <div class="border-r border-b px-2 py-2">30</div>
+        <div class="border-r border-b px-2 py-2">31</div>
+        <div class="border-r border-b text-gray-500 px-2 py-2">1</div>
+      </div>
+    </div>
+
+    <!-- Menu sidebar - cambiar display a none para ocultarlo y block para mostrarlo -->
+    <div
+      class="fixed right-0 top-0 w-4/5 bg-teal-400 h-screen shadow text-dark"
+      style="display: none"
+    >
+      <div class="w-full h-20 border flex items-center px-2">
+        <strong class="font-bold">08:00 </strong>
+        <span class="ml-2 font-medium text-dark">Reunion con los pibes</span>
+      </div>
+
+      <div>
+        <textarea class="bg-gray-200" name="textarea" rows="10" cols="50">
+              Escribir</textarea
+        >
+      </div>
+    </div>
+  </body>
+</html>
